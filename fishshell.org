@@ -1,13 +1,19 @@
-# fisher install 
+* fish 
+** shell install
+https://gist.github.com/gagarine/cf3f65f9be6aa0e105b184376f765262
+
+** fisher tool install 
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
-# theme install
+** theme install
 fisher install IlanCosman/tide@v5
-
-# fzf install
+tide configure ( 執行畫面安裝)
+** fzf install （看你要不要）
 fisher install PatrickF1/fzf.fish
 brew install fzf fd bat 
 
+
+** fzf tool
 可得到下面功能
 COMMAND            |  DEFAULT KEY SEQUENCE         |  CORRESPONDING OPTION
 Search Directory   |  Ctrl+Alt+F (F for file)      |  --directory
@@ -17,14 +23,14 @@ Search History     |  Ctrl+R     (R for reverse)   |  --history
 Search Processes   |  Ctrl+Alt+P (P for process)   |  --processes
 Search Variables   |  Ctrl+V     (V for variable)  |  --variables
 
-# export 方法
+** fish export alias
 set --universal --export theme_nerd_fonts yes
 set --universal --export theme_color_scheme zenburn
 set --universal --export PROJECT_PATHS ~/Library/PROJECT_PATH
 
-# alias 方法
-alias nvim="CC=/usr/local/bin/gcc-13 nvim"
+alias example
+alias --save nevim="CC=/usr/local/bin/gcc-13 nvim"
 
-# export alias tool
+* export alias tool ; 套件
 bass
 https://github.com/edc/bass

@@ -1,0 +1,9 @@
+* vim org mode 
+**  table
+comand: "gqgq" 可以create下面的table
+
+| Header 1 | Heder2 | Header 3 |
+|----------+--------+----------|
+| col 1    | col2   | col3     |
+
+
